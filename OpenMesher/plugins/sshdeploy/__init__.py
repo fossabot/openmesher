@@ -32,7 +32,7 @@ class SSHDeploy(IOpenMesherDeployPlugin):
             local_file_name = local_file_split[len(local_file_split) - 1]
 
             fh = open(local_file_path)
-            ssh.connect(router, username='root')
+            ssh.connect(router, username=username)
             sftp = ssh.open_sftp()
             remote_file_name = os.path.abspath('%s/%s' % (deploydir, local_file_name))
             logging.info('Deploying %s to %s...' % (local_file_name, remote_file_name))
