@@ -138,9 +138,14 @@ class Mesh():
                         self.subnets.pop()
                     )
                 except IndexError as e:
-                    raise IndexError('Not enough ports available.  Add additional port ranges and try again.')
+                    if len(self.subnets) < 1:
+                        raise Exception('Not enough subnets available.  Add a larger range of IPs and try again.')
+                    elif len(self.ports) < 1:
+                        raise Exception('Not enough ports available.  Add additional port ranges and try again.')
+                    else:
+                        raise e
 
-                if not self.links.has_key(rtr):
+                if rtr not in self.links:
                     self.links[rtr] = []
                 self.links[rtr].append(newlink)
 
