@@ -1,3 +1,4 @@
+http://sourceforge.net/projects/probstat/files/latest
 IPy==0.83
 configparser==3.5.0
 Jinja2==2.8
