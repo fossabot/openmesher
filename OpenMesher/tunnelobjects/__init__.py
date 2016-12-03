@@ -5,6 +5,7 @@ import os
 import subprocess
 import logging
 
+
 class Router():
     fqdn = ''
     hostname = ''
@@ -115,7 +116,7 @@ class Mesh():
                     newlink = Link(self.routers[rtr], self.routers[rtrclient], ports.pop(), self.iface_count, self.subnets.pop())
                 except IndexError as e:
                     raise IndexError('Not enough ports available.  Add additional port ranges and try again.')
-                
+
                 if not self.links.has_key(rtr):
                     self.links[rtr] = []
                 self.links[rtr].append(newlink)
