@@ -3,6 +3,7 @@ OpenMesher v0.6.3
 Copyright (c) 2010 Aaron C. de Bruyn <aaron@heyaaron.com>
 
 [![Build Status](https://travis-ci.org/heyaaron/openmesher.png?branch=develop)](https://travis-ci.org/heyaaron/openmesher)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdarkpixel%2Fopenmesher.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdarkpixel%2Fopenmesher?ref=badge_shield)
 
 OpenMesher is a better TunnelDigger.  They both basically create OpenVPN point to point tunnels, but OpenMesher has newer features and fixes.
 
@@ -48,3 +49,7 @@ Developers and other geek-ilk
 * If you don't like the GitHub RSS feeds, you can follow @openmesher on twitter
 * No mailing lists, IRC channels, etc...  Not a big-enough project at the moment.
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdarkpixel%2Fopenmesher.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdarkpixel%2Fopenmesher?ref=badge_large)
